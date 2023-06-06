@@ -12,14 +12,14 @@ const getBGColor = (selectedElement) => {
   return window.getComputedStyle(selectedElement).backgroundColor;
 };
 
-// var color = getBGColor(pink);
+/* var color = getBGColor(orange);
 
-// pink.addEventListener("mouseenter", () => {
-//   center.style.background = color;
-// });
+orange.addEventListener("mouseenter", () => {
+  center.style.background = color;
+}); */
 
 const magicColorChanger = (element, color) => {
-  return element.addEventListener("mouseenter", () => {
+  return element.addEventListener("click", () => {
     center.style.background = color;
   });
 };
